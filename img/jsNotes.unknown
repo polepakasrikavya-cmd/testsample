@@ -1,0 +1,1278 @@
+ javascript :
+ js is a type free language that means to delcare the variable we donot have any   specific datatype values
+  javascript is dynamically programming language
+  why it is called as Dynamic language ?
+    Dynamic:  type of the variable is  dynamically changed based on its current value type that is the reason js created  as the dynamic language
+   js is the programming language of th web . it can be update  and change both htmland css 
+   js can calculate , manipulate, validate data .
+
+   why do we learn js :
+   All the webdevelopers must learn html, css and js  
+   where html: it defines about content of the webpage 
+   css: define about layout  of webpage 
+    js :js is a programming   behaviour of the webpage 
+
+     one of many js html method is getElementById() .innerHTMLwhere based on the id , and innerhtml used to change the html  element content  
+
+     variables:
+       we can delcare the varaibales by 4 ways they are :
+       1. automatically
+       2. let:The var keyword was used in all JavaScript code from 1995 to 2015.
+       Variables declared with let have Block Scope
+
+Variables declared with let must be Declared before use
+
+Variables declared with let cannot be Redeclared in the same scope
+
+       3. var:Variables defined with var can be redeclared.
+       4. const:  values that should never change
+
+
+       What is JavaScript?  how to run the js file?
+ Ans: JavaScript is a type free language.
+      That means to declare the variable, we do not have specific data type values.
+      JavaScript is a dynamic type language.
+
+       What is  the scope?
+ Ans: Scope in JavaScript refers to the region of your code where a variable is accessible. It defines where a variable can be used and where it cannot.
+
+.Types of scope?
+ Ans: They are Two types of scope
+  1.Block Scope
+   ->Introduced with let and const keywords.
+   ->Variables declared within a block (like if, else, for, while) have block scope.
+   ->They are only accessible within that block.
+
+  2.Functional Scope
+    ->Variables declared within a function have function scope.   
+    ->They are only accessible within that function.   
+    ->This helps in creating encapsulated and modular code.
+
+.What is the difference between let and var?
+ Ans: let is  block scope.
+      variable hosting is not supported by let.
+      var is functional scope.
+      variable hosting is supported by var.
+
+.What is  the difference between let and const?
+  Ans: const is same as let but reassigning is not allowed by const.
+
+  DataTypes:
+  In JavaScript, data types define the type of data that can be stored and manipulated. JavaScript has two main categories of data types:
+
+Primitive Data Types (Immutable, stored by value)
+
+Non-Primitive (Reference) Data Types (Mutable, stored by reference)
+
+1.Primitive:These data types store a single value and are immutable. they are :
+1. Number
+2. string
+3. boolean
+4. undefined
+5. null
+Number :Represents both integer and floating-point numbers.
+
+string:Represents textual data (enclosed in "", '', or `` `).
+
+boolean:Represents true or false values.
+
+ Undefined
+A variable that has been declared but not assigned a value.
+
+Null
+Represents an intentional absence of value.
+
+Non-Primitive (Reference) Data Types
+These data types store multiple values and are mutable
+
+Object
+A collection of key-value pairs.
+Object properties are written as name:value pairs, separated by commas.
+
+Array
+A list-like collection of values.
+
+ Function
+A block of reusable code.
+
+Date
+Represents date and time.
+
+What is function?
+Ans: Function is a name to collection of executable statement.
+     Which is causes improved the reusability of the code.
+     Functions are can return value by using the return keyword.
+     If we don't return anything ,then JavaScript engine internally returns undefined value.
+
+How many ways we can define a function?
+Ans: 3 ways to define a function they are:
+
+     1.Function Statement/Declaration.
+     2.Function Expression./function definition
+     3.Arrow Functions.
+
+     1. function statement:A function statement is hoisted at the top of the execution context.
+      function statement is a traditional approach 
+
+    2.function Expression:   function definition is assigned to variable as normal values.
+    function expression are also called as first class citizens .
+
+What is the first class citizen?
+    Function definition is assigned to variable as normal values.
+     That's why functions can be treated as first class citizen or first class object.
+
+  what is the difference between the java and js 
+    java is  a oops ( object oriented programming language) and it is a compiler based programming language
+    where as javascript is  scripting language( dynamic programming langauage) and it is a interpreter based langauage    
+
+what are the arrow functions:
+Arrow function  does not supported by hoisting. Arrow functions are 4 ways they are:
+      .version 1
+      .version 2
+      .version 3
+      .version 4
+
+      version1:no-function keyword and arrow is placed after in between body and argument.
+
+      version2:if function body contains only single line then braces are not required that means braces are optional.
+              In that case return is not required system will return internally.
+
+       version3:if function have single argument then parenthesis are optional.
+
+       version4:if function does not have arguments then parenthesis are mandatory.  
+        ==(loose equality)
+        If we apply equality check on primitive values will be verified.
+        ===(strict equality)
+         If we apply equality check on object or reference types. It verifies their addrees equality. 
+
+       1.  If  do not return anything ,what is the JavaScript function returns?
+Ans: Undefined.
+1.What is the purpose of typeof?
+ Ans: The typeof operator in JavaScript is used to determine the data type of a value or variable. It returns a string indicating the type.
+ 2.What is the out put for typeof undefined?
+ Ans: undefined.
+ 3.What is the out put for typeof null?
+ Ans: Object.
+ 4.What is the out put for typeof 10?
+ Ans: number.
+ 5.What is the out put for typeof 'Hello'?
+ Ans: string.
+ 6.What is the out put for typeof {}?
+ Ans: object.
+ What is the out put for typeof []?
+ Ans: object.
+ What is the out put for typeoffunction (){}?
+ Ans: function.
+ What is the out put for typeof typeof 10?
+ Ans: string.
+ What is the out put for typeof true?
+ Ans: Boolean.
+ What is the out put for typeof typeof true?
+ Ans: string.
+
+[]==[]?
+Ans: false.
+
+[]===[]?
+Ans: false.
+
+{}=={}?
+Ans: false.
+
+null==null?
+Ans: true.
+
+.null===null?
+Ans: true.
+
+undefined==undefined?
+Ans: true.
+
+undefined===undefined?
+Ans: true.
+
+null==undefined?
+Ans: true.
+
+null===undefined?
+Ans: false.
+
+
+const nos =[10,20,30,40]
+    console.log(nos[1]);
+Ans:20
+
+ const nos =[10,20,30,40]
+    console.log(nos[6]);
+Ans: undefined.
+ 
+const nos =[10,20,30,40]
+    console.log(nos[-1]);
+Ans: undefined
+
+const nos =[10,20,30,40]
+    nos[-5]=100
+    console.log(nos);
+Ans:10,20,30,40,'-5':100
+
+ const nos =[10,20,30,40]
+    nos[1]=200
+    console.log(nos);
+Ans: 10,200,30,40
+
+const nos =[10,20,30,40]
+    nos[10]=200,
+    console.log(nos);
+Ans: 10,20,30,40,<6 empty types>200
+
+
+ var arr=[[],[],[],[]]
+    console.log(arr[0]==arr[1]);
+ Ans: false.
+
+var arr=[[],[],[],[]]
+    console.log(arr[1]==arr[1]);
+
+Ans: true.
+
+var obj=[{},{},{}]
+   console.log(obj[0]==obj[0]);
+Ans: true.
+
+var obj=[{},{},{}]
+   console.log(obj[1]==obj[0]);
+Ans: false.
+
+
+What is the Global execution context?
+Ans: If any JavaScript file is loaded into JavaScript engine. immediately Global Execution context is created. 
+ 
+ How the Global execution context  works?
+Ans: 1.Declaration Section: Creates the global object (window or global).   
+                            Creates memory space for variables and functions.   
+                            Initializes variables with undefined.
+                            Hoists function declarations to the top of the script.
+
+2.Execution section: Variable assignments occur.
+                     Function calls create new function execution contexts.
+
+ What is the Execution context?
+Ans: Script behaviour is a interpreter .when ever the error comes code terminate.
+
+What is the difference between  Global execution context  and Execution context?
+Ans: If any JavaScript file is loaded into JavaScript engine. immediately Global Execution context is created. 
+    script behaviour is a interpreter .when ever the error comes code terminate.
+
+
+    operators: operators are used to perform type of mathematics and logical computations
+     they are  7 type of operators
+     1. Arithmetic operators: are used to perform Arithmetic  on number (+,-,*, **, /,%, ++ increment, --decrement)
+
+     exponentation(**):
+     console.log(2**3)
+
+     2.Assignment  operator: assign the values to varaibales
+     =, +=, -=, *=, %=,**=
+
+     3. logical operator :
+     logical operators return a boolean value  based on the logic between two or more conditions 
+
+     && AND: returns true only if both  conditions are true
+      || OR:it returns true if atleast one conditions true
+       ! logicalNOT: it is reverse condition if it true returns false , if false returns true 
+
+    4. comparsion operator:comapres values and check conditions
+    == equalto,===equalto, !=(not equal to), !===(strict not equal to), >,<,>=,<=
+
+    5. string operator: in js the main string operator is the + plus operator
+    1. concatenation(joining strings)
+    2. concatenation with numbers and strings
+    3. +=( addand assign for strings)
+    4.template literals(modern way)  we cn use backtickets ` ` with${}  to insert variables  inside strings 
+
+    6.Bitwise operators:bitwise operator works on binary (bit-level)values works with 0's and 1'same
+    1. &and= set each bit to 1 if both  bits are 1
+    2.| or=if least one bit 1 then bit is 1
+    3. xor ^=  if inputs are same  gives 0 and if inputs are different  gives 1
+    4. ~not= where in this 0 becomes 1 and 1 becomes 0
+    5. leftshift<<=  shiftbits to the left fills with 0. it is like mutliplying by 2
+    6.>> rightshift= it divides by 2 but preserves the sign 
+    7. unsigned rightshift>>>= same as  right shift but doesn't preserve sign 
+
+7.Ternary operator: it is a shortcut of an  ifelse condition
+syntax: condition?expressionIfTrue:expressionIfFalse
+it takes  three operands
+
+8.The typeof operator in JavaScript is used to determine the data type of a value or variable. It returns a string indicating the type.
+The out put for typeof undefined?
+ Ans: undefined.
+ 
+ Reason:undefined is a primitive data type in JavaScript.
+
+typeof undefined returns "undefined" because that's the official name of the type.
+
+This behavior helps in checking whether a variable has been assigned a value or not.
+
+conditional statements: conditional  statements are used to perform  different  actions based on different condition 
+
+  they are 4 types of conditional  statements
+  1. if:  used to specify a block of code to be executed  .if the condition is true only
+  let hour=18
+ if(hour<=18){
+    greetings=" good evening"
+
+
+ }
+ console.log(greetings)
+  2. else:  runs one  block if condition is true another one is false 
+  3. else if: we want to check more than one condition.checks in multiple orders
+
+  4. switch: used to perform  different actions based on  different conditions , values of a variable or  expression.
+   it is useful  when you have multiple cases to check insted of writing many  if and else if blocks
+   syntax:switch(expression){
+    case value1:
+    break;
+    case value2:
+    break;
+    case value3:
+    break;
+    case value4:
+    break;
+    default:
+
+   }
+
+   loops:loops can execute a block of code a number of times
+   they are different loops
+   1. for 
+   2. while
+   3. dowhile
+   for: used  when we know how many times you want to loops
+   while:used when we want to loop as long as a condition is true
+   dowhile:similar to while but it will run at least once.no matter what
+   this loop will execute the code block once before checking if the  condition  is true then it will repeat the loop  as long as the condition is true
+   forin: in js forin statement loops through the properties of an objects uesd on objects
+   behaviour based on the keyvalue pairs
+   forof:in js for of statement loops through the values of an iterable object 
+   its loop over the datastructure such as array , strings 
+
+   Higher  order function:
+   functions can accept another function as aa arguments and even return  function as reuslt
+    They are 3 types of hiher order functions 
+    1. map 2. filter 3. reduce
+    1.map:Map is a higher-order function that takes an array as input and applies a given function to each element of the array, returning a new array with the transformed
+    map: invokes callbackfunction for process the elements  for providing each and element and it produces an updated  array
+    map(  ) takes  2 arguments
+    1. callbackfunction
+    2, thisvalue for each elementof the array processing .
+     The callbackfunction takes 3 arguments 
+     1. current element array 
+     2. current index
+     3. entire array
+      The purpose of map(): it is used to apply  the manipulations on each element.
+      At the end of the iteration of the array it return a manipulated array. due  to this process original  array is not get effected. we will get one different modified array.
+
+      filter: function also maintain  internal array for each  and  every truth value of the callbackfunction that respective  element is  added to resultant  array  
+ it takes 2   arguments 1. callbackfunction 2. this value
+ this callbackfunction is executed  for each and every  element of array
+this callbackfunction must return  boolean values based on certain condition applying on current element. if  current satisfies or fulfills that contains that this finction returns true, that means this  element is  qualified for the output array
+
+reduce : used to recombine or add 
+ reduce() does not change  th original array 
+ it doesn't execute  the empty arrays 
+  the callbackfunction  as 4 arguments
+   1. acculumated value (total)
+   2. current index
+   3. current array
+   4. entire  array
+   this function that takes an array and reduces it  to a single value .
+
+   hoisting:hoisting is javascript default behaviour of moving declarations to the top
+   In javascript a variable can be declared after it has been used 
+   In other  words  a variable can be used before it has been declared
+   hoisting is js default behavior of all declarations to  the top of the current scope ( to the top of the current script or the current function)
+   variables declared with let  and const will not be hoisted with let you cannt use a variable before it is  declared  with const  you cannot use variable before it is declared 
+   hoisting works for declarations not for  intialization 
+ function declarations are fully hoisted both name and body
+function  expression is not supported but the assignment to the function is not
+
+Jwt  Token: JWT (JSON Web Token) is a compact and self-contained way to securely transmit information between two parties — usually between a server and a client.
+
+The information inside a JWT is encoded, which means it is not stored on the server. This allows for stateless authentication, where the server doesn't need to keep track of user sessions.
+Structure of JWT:
+A JWT is divided into three parts:
+
+Header:The header typically consists of two parts:
+
+The type of the token (JWT).
+
+The signing algorithm (e.g., HMAC SHA256 or RSA).
+{
+  "alg": "HS256",
+  "typ": "JWT"
+}
+Payload:
+
+The payload contains the claims — statements about an entity (usually the user) and additional data.
+
+There are three types of claims:
+
+Registered claims: Predefined claims like iss (issuer), exp (expiration), iat (issued at).
+
+Public claims: Can be defined by anyone, e.g., user-specific data like user_id.
+
+Private claims: Custom claims that are shared between parties that agree on them.
+ {
+  "user_id": "12345",
+  "role": "admin",
+  "exp": 1633505930  
+}
+Signature:
+
+The signature is used to verify the authenticity of the token and ensure that the data has not been tampered with.
+
+It's generated by signing the encoded header and payload with a secret key using the algorithm specified in the header.
+ex: signature = HMACSHA256(
+  base64UrlEncode(header) + "." + base64UrlEncode(payload),
+  secret
+)
+When and Why to Use JWT:
+Authentication: After login, the server sends a JWT to the client, and the client can use this token for further requests.
+
+Stateless Authentication: Since the JWT stores user data, there's no need for the server to store session data — making it more scalable.
+
+Secure Data Transmission: The information is encoded and can also be encrypted for added security.
+
+What is a Token?
+A token is a piece of data that is used to authenticate and authorize the user for specific actions. It is a representation of the user's identity, typically issued by a server after a successful login.
+
+Tokens are often used in the context of API-based communication where the client (browser, mobile app, etc.) interacts with a server using tokens for authentication.
+
+Types of Tokens:
+Session Token:
+
+A server-generated token that keeps track of a user's session. It's typically stored server-side (in a database or memory).
+
+When a client makes a request, the server checks the session token to verify the user's identity.
+
+JWT (JSON Web Token):
+
+A stateless token that contains all the information necessary for authentication. It is self-contained and doesn't require the server to maintain any session information.
+
+API Token:
+
+A token often used for authentication when interacting with third-party services (e.g., Google API, Stripe).
+
+API tokens are typically long-lived and used for specific purposes like accessing resources.
+
+What is an Access Token?
+An access token is a short-lived token used to authenticate and authorize requests to access a protected resource or API.
+
+Short-Lived: Access tokens are usually temporary (e.g., 15 minutes to 1 hour) and should be refreshed regularly to maintain access.
+
+Bearer Token: When you send an access token in an HTTP request, it is typically added in the Authorization header as a Bearer Token.
+
+Authorization: Bearer <access_token>
+
+When to Use Access Tokens:
+API Calls: Access tokens are used to make requests to a server that requires authentication.
+
+Session Management: It validates that the user has been authenticated and authorized to perform actions.
+
+User-Specific Data: It allows access to user-specific data (e.g., profile, posts).
+
+What is a Refresh Token?
+A refresh token is used to obtain a new access token when the old one expires. It is long-lived (typically days or weeks) and can be used to maintain a user session without requiring them to log in again.
+
+Role: When the access token expires, instead of asking the user to log in again, the client sends the refresh token to the server, and the server issues a new access token.
+
+Secure Storage: Refresh tokens are typically stored in secure, HttpOnly cookies to prevent XSS attacks.
+
+How Refresh Token Flow Works:
+Login: The user logs in, and the server provides both an access token and a refresh token.
+
+Access Token Expiry: The access token expires after a short period (e.g., 15 minutes).
+
+Token Refresh: The client sends the refresh token to the server to obtain a new access token.
+
+New Access Token: The server returns a new access token without requiring the user to log in again.
+
+
+What is Authentication?
+Authentication is the process of verifying the identity of a user. It’s the mechanism used to confirm whether someone is who they say they are.
+
+Login Process: Authentication typically involves validating a user's credentials (e.g., username + password, email + OTP).
+
+Methods: Authentication can happen through various means like:
+
+Password-based authentication (username + password)
+
+Multi-factor authentication (MFA) (username + password + OTP)
+
+OAuth (using external authentication providers like Google or Facebook)
+
+Biometric authentication (fingerprint, face recognition)
+
+6. Authorization
+What is Authorization?
+Authorization is the process of granting or denying access to specific resources or actions based on the user's identity and roles.
+
+After Authentication: Once a user has authenticated, authorization determines what they can do or what resources they can access.
+
+Roles: A user might be given different levels of access based on roles:
+
+Admin: Can manage all users and settings
+
+User: Can access only their data and basic features
+
+Guest: Can access only public data
+
+Authorization Techniques:
+Role-based Access Control (RBAC): Users are assigned roles, and each role has specific permissions.
+
+Attribute-based Access Control (ABAC): Access decisions are made based on attributes (e.g., user attributes, resource attributes).
+
+Access Control Lists (ACLs): Permissions are assigned to specific resources or actions for a user or group of users.
+
+ How All of These Work Together:
+Authentication:
+
+User logs in by providing credentials (e.g., username + password).
+
+Server verifies the credentials and issues an access token and refresh token.
+
+Authorization:
+
+The access token is used in every request to determine whether the user can access the resource.
+
+The server checks the user's role or permissions and allows or denies access.
+
+Access Token Expiry:
+
+The access token expires after a set period (e.g., 15 minutes).
+
+The client sends the refresh token to the server to obtain a new access token.
+
+Logout:
+
+When the user logs out, the tokens are cleared, and the session is terminated.
+
+
+Error handling : error handling in js is the  proceess of catching and  dealing with errors that occur while your code is running 
+
+there are 4 types of error handling  methods  they are : 
+1. Try
+2. catch
+3. throw
+4. finally
+syntax  :
+try {
+  // risky code here
+} catch (error) {
+  // handle the error here
+} finally {
+  // always runs (optional)
+}
+
+
+1. try: The try block contains the code that might throw an error.
+
+JavaScript tries to run this code. If an error happens, it jumps to the catch block.
+
+
+catch :The catch block runs only if there is an error inside try.
+
+It catches the error and lets you handle it (show a message, fix the issue, etc.).
+
+throw:manaully creates the errors ( custom error) which  is used to stop the execution 
+  it is useful  in form validation , buisnesslogic etc
+
+  Pure Functions
+A pure function:
+
+Always produces the same output for the same input
+Has no side effects (doesn't modify external state)
+Doesn't depend on external state
+
+// Pure function: always returns the same output for the same input
+function add(a, b) {
+  return a + b;
+}
+
+console.log(add(2, 3)); 
+console.log(add(2, 3)); 
+
+function doubleNumbers(arr) {
+  return arr.map(num => num * 2);
+}
+
+const numbers = [1, 2, 3];
+console.log(doubleNumbers(numbers)); 
+console.log(numbers); 
+
+function updateName(user, newName) {
+  return { ...user, name: newName };
+}
+
+const user = { id: 1, name: "John" };
+const updatedUser = updateName(user, "Mike");
+console.log(updatedUser); 
+console.log(user); 
+
+
+Impure Functions
+An impure function:
+
+May return different outputs for the same input
+Has side effects (modifies external state)
+Depends on external state
+
+// Impure function: depends on external state
+let counter = 0;
+function incrementCounter() {
+  counter++;
+  return counter;
+}
+
+console.log(incrementCounter()); // Output: 1
+console.log(incrementCounter()); // Output: 2 (different result for same input)
+
+// Impure function: modifies the input (side effect)
+function addItemToArray(arr, item) {
+  arr.push(item);
+  return arr;
+}
+
+const fruits = ["apple", "banana"];
+console.log(addItemToArray(fruits, "orange")); // Output: ["apple", "banana", "orange"]
+console.log(fruits); // Output: ["apple", "banana", "orange"] (original array modified)
+
+// Impure function: uses external data and has side effects
+function fetchUserData(userId) {
+  
+  return fetch(`https://api.example.com/users/${userId}`);
+}
+
+// Impure function: depends on date/time (external state)
+function getGreeting() {
+  const hour = new Date().getHours();
+  return hour < 12 ? "Good morning!" : "Good afternoon!";
+}
+
+console.log(getGreeting());
+
+
+Benefits of Pure Functions
+
+Predictable and easier to test
+No side effects means fewer bugs
+Can be safely cached (memoization)
+Supports parallel processing
+
+
+Error handling:Error handling in js is the process of catching and dealing with error that occur while your code  is running
+
+they are 4 types  of  error handling :
+1. try
+2. catch
+3. throw
+4. finally
+1. try : The try block contains the code that might throw an error.
+JavaScript tries to run this code. If an error happens, it jumps to the catch block.
+ex:try {
+  let number = 5;
+  console.log("The number is:", number);
+} catch (error) {
+  console.log("Something went wrong.");
+}
+No error occurs, so the message is printed.
+
+catch is skipped.
+
+
+catch :t he catch block runs only if there is an error inside try.
+
+It catches the error and lets you handle it (show a message, fix the issue, etc.).
+try {
+  // This variable doesn't exist
+  console.log(studentName);
+} catch (error) {
+  console.log("Caught an error:", error.message);
+}
+studentName is not defined, so JavaScript throws an error.
+
+The catch block catches it and shows a message.
+
+
+throw:You can manually throw (create) an error using throw.
+
+Useful in form validation, business logic, etc.
+
+function checkAge(age) {
+  if (age < 18) {
+    throw new Error("You must be 18 or older.");
+  }
+  return "Access granted.";
+}
+
+try {
+  console.log(checkAge(16));
+} catch (error) {
+  console.log("Error:", error.message);
+}
+throw creates a custom error message.
+
+catch catches and handles it.
+
+
+Finally : The Finally  block  always runs, whether  there is an error or not 
+it is good  for cleanup tasks , like  closing files, stopping loaders etc ..
+ try{
+  console.log(" Trying something risky");
+  let result=10/2;
+  console.log(" result is:", result);
+ } 
+ catch(error){
+  console.log("error:", error.message);
+ }
+ finally{
+  console.log(" this code runs no  matter what")
+ }
+ 
+ then  finally runs  anyway
+
+Pure Functions:
+A pure function is a function that:
+
+Always returns the same output for the same input.
+
+Has no side effects (does not modify anything outside the function).
+
+ ex:function add(a, b) {
+  return a + b;
+}
+
+Benefits of pure functions:
+Easier to test
+
+Easier to debug
+
+More reusable
+
+Works well with functional programming concepts
+
+ Impure Functions
+An impure function:
+
+May return different results for the same input.
+
+Has side effects — it might modify global variables, change DOM, make API calls, etc
+
+ex :let count = 0;
+
+function increment() {
+  count++;
+}
+This function changes the global count variable — it’s impure.
+
+Destructuring:
+
+Destructing: Extracting the elements into local variable manually.
+two ways 
+     1.arrary destructing:
+      extracting the array  elements into local variable manually.
+
+     2.object destructing:
+      extracting the object  elements into local variable manully.
+Spread operator:
+ The spread operator in JavaScript is a powerful tool that allows you to expand an iterable (like an array or string) into individual elements.
+    spread operator can be applicable o following things.
+    1.spread operator with array.
+    2.spread operator with object. 
+spread operator with array:The spread operator allows you to spread elements of an iterable (like an array or object) into individual elements.
+ where the spread operator can be represented by (...)
+ It can be used in a variety of ways for copying, merging, or expanding values.
+
+syntax
+...iterable
+
+ 1. spread operator with array :
+When you use ...array, you're saying:
+
+"Take all the elements of this array and unpack them into individual elements."
+
+The spread operator works with arrays to copy, merge, expand, and add elements.
+1.Copying an Array (Shallow Copy)
+When you use the spread operator on an array, it copies the elements into a new array. The spread operator doesn't create a deep copy, so if the array has objects or nested arrays, those are shallowly copied.
+ex:
+const originalArray = [1, 2, 3];
+const copiedArray = [...originalArray];
+
+console.log(copiedArray); // [1, 2, 3]
+console.log(copiedArray === originalArray); // false (they are different references)
+
+1.2 Merging Arrays
+You can use the spread operator to merge two or more arrays together
+ex:const arr1 = [1, 2];
+const arr2 = [3, 4];
+const mergedArray = [...arr1, ...arr2];
+
+console.log(mergedArray); // [1, 2, 3, 4]
+
+1.3 Adding/Removing Elements
+You can add or remove elements when copying or merging arrays:
+
+const arr = [2, 3, 4];
+const newArray = [1, ...arr, 5];
+
+console.log(newArray); // [1, 2, 3, 4, 5]
+
+1.4 Expanding Array into Function Arguments
+The spread operator can expand an array into individual elements when calling a function.
+
+
+2.Spread Operator with Objects
+The spread operator can also be used with objects to copy, merge, and update properties.
+ 1. Copying an Object
+Just like with arrays, the spread operator can copy the properties of an object into a new object.
+
+const person = { name: "John", age: 30 };
+const copiedPerson = { ...person };
+
+console.log(copiedPerson); // { name: "John", age: 30 }
+console.log(copiedPerson === person); // false (they are different references)
+
+2. Merging Objects
+If you have multiple objects with properties, you can merge them into a new object using the spread operator.
+ex: const obj1 = { name: "Alice", age: 25 };
+const obj2 = { country: "USA", age: 30 };
+const mergedObj = { ...obj1, ...obj2 };
+
+console.log(mergedObj); // { name: "Alice", age: 30, country: "USA" }
+
+3. Adding or Updating Properties
+You can add or update properties in an object using the spread operator.
+ex: const person = { name: "John", age: 30 };
+const updatedPerson = { ...person, age: 35, country: "USA" };
+
+console.log(updatedPerson); // { name: "John", age: 35, country: "USA" }
+
+
+Summary
+Spread Operator with Arrays:
+Copying: Creates a shallow copy of the array.
+
+Merging: Combines multiple arrays into one.
+
+Adding/Removing Elements: Inserts new values into arrays.
+
+Function Arguments: Expands array elements as individual arguments.
+
+Spread Operator with Objects:
+Copying: Creates a shallow copy of the object.
+
+Merging: Combines multiple objects into one.
+
+Adding/Updating Properties: Adds or updates properties in an object.
+
+ Limitations:
+Shallow copy: For arrays and objects with nested elements (objects or arrays), the spread operator will not deeply copy those nested structures.
+
+Key Conflicts: When merging objects, properties from later objects overwrite earlier ones.
+
+
+Browser API :  Browser API's are built in  feature  provided by the  web browser that allow developers to interact  with the browser and the enivornment around it  such as screen,  network , storage , camera, etc ..
+(Think of a browser API's as as set of tools given by the browser  that js can use  to do cool things like showing alerts, storing data, accessing location or manipulating the DOM)
+
+Web API's : A web  API's  ( web application programming interface ) is a set of built in functions and interfaces that allow your js code to interact  with the browser , the device or external web services
+ web API's  2 types 1. browserAP's 2 external  web AP's 
+
+ 1. browser API's ( built in ):  which runs in browser 
+
+ it includes   6 types of API's : 1.DOM 2. Fetch 3. Geolocation 4. localstorage/ sessionstorage 
+ 5. Notification 7. timers( setTimeout, set Interval)
+
+ 1. DOM :DOM stands for Document Object Model.
+It’s a programming interface provided by the browser that allows JavaScript to interact with and manipulate HTML and CSS.
+
+Think of it like this:
+When a web page loads, the browser converts your HTML into a tree-like structure — this structure is the DOM.
+
+Example HTML:
+html
+Copy
+Edit
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>My Page</title>
+  </head>
+  <body>
+    <h1>Hello World</h1>
+    <p>This is a paragraph.</p>
+  </body>
+</html>
+
+
+DOM Tree Representation:
+css
+Copy
+Edit
+document
+ └── html
+     ├── head
+     │   └── title
+     └── body
+         ├── h1
+         └── p
+Every element, tag, attribute, and piece of text becomes a node in this tree.
+
+Why is the DOM important?
+
+The DOM allows you to:
+
+ Access elements on the page
+
+ Change text, styles, and structure
+
+ Add or remove elements dynamically
+
+ Respond to user interactions (like clicks, typing)
+
+2. Fetch : Allow   you to fetch data from a server using the http request( Get, post, put, delete)
+ex:fetch(url, options)
+  .then(response => response.json())
+  .then(data => {
+    // Do something with the data
+  })
+  .catch(error => {
+    // Handle error
+  });
+
+TimerAPI: ( setTimeout and setInterval)
+allows you to run code after a delay or repeatedly
+
+1. setTimeout()
+Runs a function once after a delay (in milliseconds).
+
+🧪 Example:
+javascript
+Copy
+Edit
+console.log("Start");
+
+setTimeout(() => {
+  console.log("This runs after 2 seconds");
+}, 2000);
+
+console.log("End");
+📝 Output:
+
+pgsql
+Copy
+Edit
+Start
+End
+This runs after 2 seconds
+ 2. setInterval()
+Runs a function repeatedly at fixed intervals.
+
+ex:let count = 0;
+
+const intervalId = setInterval(() => {
+  count++;
+  console.log("Running every 1 second: ", count);
+
+  if (count === 5) {
+    clearInterval(intervalId); // Stop after 5 times
+    console.log("Interval cleared");
+  }
+}, 1000);
+
+ Output:
+
+
+Running every 1 second: 1
+Running every 1 second: 2
+...
+Interval cleared 
+
+3. Geolocation: give access to users physical location( with permission)
+ex:<!DOCTYPE html>
+<html>
+<head>
+  <title>Geolocation Example</title>
+</head>
+<body>
+  <h2>Find My Location</h2>
+  <button onclick="getLocation()">Get Location</button>
+  <p id="output"></p>
+
+  <script>
+    function getLocation() {
+      const output = document.getElementById("output");
+
+      // Check if geolocation is supported
+      if (!navigator.geolocation) {
+        output.innerHTML = "Geolocation is not supported by your browser.";
+        return;
+      }
+
+      // Request location
+      navigator.geolocation.getCurrentPosition(
+        (position) => {
+          const latitude = position.coords.latitude;
+          const longitude = position.coords.longitude;
+          output.innerHTML = ` Your location:<br>Latitude: ${latitude}<br>Longitude: ${longitude}`;
+        },
+        (error) => {
+          output.innerHTML = `Error: ${error.message}`;
+        }
+      );
+    }
+  </script>
+</body>
+</html>
+
+6. TimerAPI(  localstorage, sessionstorage)
+localstorage: allows saving data in the browser so it  stays even after page reloaded  
+
+<h2>Local Storage Example</h2>
+<input type="text" id="nameInput" placeholder="Enter your name">
+<button onclick="saveName()">Save Name</button>
+<button onclick="showName()">Show Saved Name</button>
+<p id="displayName"></p>
+
+<script>
+  function saveName() {
+    const name = document.getElementById("nameInput").value;
+    localStorage.setItem("myName", name); // Save to local storage
+  }
+
+  function showName() {
+    const name = localStorage.getItem("myName"); // Get from local storage
+    document.getElementById("displayName").innerText = "Saved Name: " + name;
+  }
+</script>
+
+sessionstorage:  this data will stay as long as browser tab  is open  once the tab is closed or reloaded from a new session . the data is gone 
+
+
+<h2>Session Storage Example</h2>
+<input type="text" id="cityInput" placeholder="Enter your city">
+<button onclick="saveCity()">Save City</button>
+<button onclick="showCity()">Show Saved City</button>
+<p id="displayCity"></p>
+
+<script>
+  function saveCity() {
+    const city = document.getElementById("cityInput").value;
+    sessionStorage.setItem("myCity", city); // Save to session storage
+  }
+
+  function showCity() {
+    const city = sessionStorage.getItem("myCity"); // Get from session storage
+    document.getElementById("displayCity").innerText = "Saved City: " + city;
+  }
+</script>
+
+
+useStrict:JavaScript "use strict"
+
+In JavaScript, 'use strict'; states that the code should be executed in 'strict mode’.
+ This makes it easier to write good and secure JS code.
+ Note: You need to declare strict mode at the beginning of the program.
+ If you declare strict mode below some code, it won't work.
+
+Benefits of Strict Mode
+The use of strict mode:
+helps to write a cleaner code
+changes previously accepted silent errors (bad syntax) into real errors and throws an error message
+
+
+What is a Promise in JavaScript?
+A Promise is a way to handle asynchronous operations (like API calls, file reading, etc.).
+
+Think of a promise as:
+
+Pending : It’s still doing the work (like loading data).
+
+Resolved : It finished successfully.
+
+Rejected: It failed.
+
+Basic structure :
+
+const promise = new Promise((resolve, reject) => {
+ 
+  if (success) {
+    resolve("Success!");
+  } else {
+    reject("Error!");
+  }
+});
+
+
+ex:  function fetchData() {
+  return new Promise((resolve, reject) => {
+    setTimeout(() => {
+      resolve("Data loaded!");
+    }, 2000); // waits for 2 seconds
+  });
+}
+
+fetchData().then((result) => {
+  console.log(result); 
+}).catch((error) => {
+  console.log(error);
+});
+
+output :  Data loaded!
+
+
+ What is await?
+The await keyword pauses the execution of an async function until a Promise is resolved or rejected.
+structure:
+const data = await fetchData();
+console.log(data);
+ Much cleaner and easier to read
+ only use await inside an async function
+
+ correct usage : 
+ async function getData() {
+  const data = await fetchData();
+  console.log(data);
+}
+getData();
+
+Pauses the execution of the async function until the Promise (fetchSomething()) is resolved.
+
+Returns the value from the resolved Promise and stores it in result.
+
+If the Promise rejects, it throws an error — so you should use try...catch.
+
+
+function delay(ms) {
+  return new Promise(resolve => setTimeout(resolve, ms));
+}
+
+async function example() {
+  console.log("Start");
+
+  await delay(2000); // wait for 2 seconds
+
+  console.log("After 2 seconds");
+}
+
+example();
+
+output: Start
+(wait 2 seconds...)
+After 2 seconds
+
+
+
+synchronous and asynchronous :
+
+Synchronous JavaScript:Synchronous = One thing at a time
+
+In synchronous code, each line waits for the previous one to finish before moving to the next line.
+
+ ex: Real-world example:
+Imagine you're standing in line at a food stall. One person is served at a time. You can’t move forward until the person ahead of you is done.
+
+ex: console.log("1");
+console.log("2");
+console.log("3");
+ output : 1
+2
+3
+Each line is executed one after another, in the exact order they appear.
+
+Asynchronous in JavaScript:
+Asynchronous = Don't wait, continue to the next task
+
+In async code, some tasks take time (like fetching data). JavaScript lets these tasks run in the background, so it can keep doing other things.
+
+
+ Real-world example:
+Ordering food → the chef starts preparing it → meanwhile, you chat with a friend → food is served after some time.
+
+ex: 
+console.log("Start");
+
+setTimeout(() => {
+  console.log("This runs after 2 seconds");
+}, 2000);
+
+console.log("End");
+output :Start
+End
+This runs after 2 seconds
+Even though the setTimeout() is written in the middle, JavaScript doesn't wait for 2 seconds — it keeps going, and finishes later.
+
+
+ Why is this useful?
+JavaScript is single-threaded, so it can only do one thing at a time. But the asynchronous behavior helps handle tasks like:
+
+Fetching data from an API
+
+Waiting for a timer
+
+Loading images or files
+
+Responding to user input (clicks, typing)
+
+
+import — Bringing code into a file
+
+
+// main.js
+import { add, subtract } from './utils.js';
+
+console.log(add(5, 3));       // 8
+console.log(subtract(5, 3));  // 2
+
+
+ export — Sending code out of a file
+
+ export support :
+
+Variables
+
+Functions
+
+Classes
+
+Objects
+
+Named Export (you can export multiple things)
+
+// utils.js
+export const add = (a, b) => a + b;
+export const subtract = (a, b) => a - b;
+
+Why Use import and export?
+As your app grows, you don’t want all your code in one file. So you:
+
+Break your code into small, manageable pieces (modules)
+
+Export variables, functions, or classes from one file
+
+Import them into another file
+
+
+
+
+
+
+
+
+
+
+
+
+         
+             
+
+     

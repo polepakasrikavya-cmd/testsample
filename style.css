@@ -3,7 +3,7 @@ h1{
 }
 body{
     width: 100%;
-    background-image: url(img/WhatsApp\ Image\ 2025-09-03\ at\ 22.59.15_ae8ae4f3.jpg);
+    background-image: url(img/WhatsApp\ Image\ 2025-09-10\ at\ 12.20.25_8a064d79.jpg);
     background-size: cover;
     height: 109vh;
 }
@@ -12,13 +12,91 @@ h2{
     color: rgb(7, 205, 132);
 }l
 p{
-    color: rgba(3, 24, 26, 0.801);
+    color: rgba(3, 28, 31, 0.801);
     font-size: 20px;
 }
 
 .main{
-    color: blue;
+    color: rgb(0, 0, 0)
 }
 .menu{
-
+    text-align: center;
+    word-spacing: 200px;
+    margin-left: 500px;
+    height: 100px;
+    font-size: 30px;
+    margin-top: -600px;
+    font-family:'Times New Roman', Times, serif;
+    position: fixed;
+           
 }
+
+
+.menu a{
+    color: rgb(2, 10, 11);
+    }
+    a:hover{
+        color: brown;
+    }
+.content{
+    text-align: center;
+   margin-left: 200px;
+   margin-right: 800px;
+    font-size: 22px;
+    margin-top: -15px;
+    color:brown;
+}
+.logo{
+    font-size: 30px;
+}
+.main{
+    text-align: center;
+    font-size: 25px;
+    margin-left: 500px;
+    margin-right: 500px;
+    color: brown;
+    margin-top: 185px;
+
+ 
+}
+.form{
+    text-align: right;
+    margin-right: 400px;
+    margin-top: -280px;
+}
+.main{
+    border: 3px solid black;
+}
+.logo{
+    word-spacing: 15px;
+    margin-top: 415px;
+    margin-right:990px;
+    margin-left: -600px;
+    background-color: aliceblue;
+   
+    
+    
+}
+nav{
+    margin-top: -100px;
+    background-color: aliceblue;
+    padding-right:32px;
+    padding-top: 50px;
+    padding-left:25px;
+    padding-bottom: 16px;
+   
+   
+}
+.size{
+
+    margin-top: 200px;
+}
+.video{
+   
+    margin-top:200px;
+    margin-left: -10px;
+    width: 10px;
+    height: 5px;
+}
+
+
